@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Sansation-Light;
+  src: url("/assets/fonts/Sansation-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: Playfair;
+  src: url("/assets/fonts/PlayfairDisplaySC-Regular.ttf") format('truetype');
+}
+.nav-bar{
+  height: 140px;
+  width:100%;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  .button_for_login{
+    display: flex;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-items: center;
+    background-color: rgba(255, 33, 140, 0.58);
+    width: 195px;
+    height: 75px;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+  }
+  .text_for_login{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Sansation-Light;
+    color: white;
+    font-size: 40px;
+  }
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .main-img{
+    height: 830px;
+  }
+  .circle{
+    width: 800px;
+    height: 800px;
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    box-shadow: 0 4px 100px rgba(255, 33, 140, 0.53), inset 0 0 100px rgba(255, 33, 140, 0.53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .astro{
+      margin: 0 auto;
+      text-align: center;
+      font-family: Playfair;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 200px;
+      line-height: 267px;
+    }
+    .container-for-text{
+      height: 96px;
+      width: 380px;
+      background: rgba(255, 33, 140, 0.55);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .description{
+        color: white;
+        margin: 0 auto;
+        font-family: Sansation-Light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+      }
+    }
+  }
+}
+.block{
+  height: 50px;
+  overflow-x:hidden;
+  margin-top: 50px;
+  .stroke{
+    font-family: Sansation-Light;
+    font-style: normal;
+    font-weight: 300;
+    max-height: 50px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align:right;
+    color: black;
+    text-transform: uppercase;
+    animation: text 5s infinite linear;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: revert;
+  }
+  @keyframes text {
+    0%{
+      transform: translate(-100%, 0) scaleX(100%);
+    }
+
+    100%{
+      transform: translate(100%, 0) scaleX(100%);
+    }
+  }
+}

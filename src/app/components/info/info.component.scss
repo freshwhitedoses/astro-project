@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Sansation-Light;
+  src: url("/assets/fonts/Sansation-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: Playfair;
+  src: url("/assets/fonts/PlayfairDisplaySC-Regular.ttf") format('truetype');
+}
+.nav-bar{
+  height: 140px;
+  width:100%;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  .button_for_name{
+    display: flex;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-items: center;
+    background-color: rgba(255, 33, 140, 0.58);
+    width: 195px;
+    height: 75px;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+  }
+  .text_for_name{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Sansation-Light;
+    color: white;
+    font-size: 40px;
+  }
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .zodiac{
+    text-align: center;
+    margin: -40px auto;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 107px;
+    font-family: Sansation-Light;
+    color: rgba(255, 33, 140, 1);
+  }
+  .description{
+    text-align: center;
+    margin: 35px auto;
+    font-family: Sansation-Light;
+    max-width: 1600px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .day{
+    text-align: center;
+    margin: 10px auto;
+    font-family: Sansation-Light;
+    color: rgba(255, 33, 140, 1);
+    font-size: 64px;
+    line-height: 72px;
+
+  }
+  .item{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: black solid 2px;
+    outline: none;
+    .border{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: start;
+      .item_info{
+        margin: 30px  0 -10px auto;
+        width: 350px;
+        justify-content: start;
+        font-size: 44px;
+        font-family: Sansation-Light;
+      }
+      .btn{
+        cursor: pointer;
+        margin: 5px auto 0 600px;
+        background-color: transparent;
+        border-color: transparent;
+        font-family: Sansation-Light;
+        font-size: 80px;
+        font-weight: lighter;
+      }
+  }
+    .result{
+      font-family: Sansation-Light;
+      font-size: 35px;
+      font-weight: lighter;
+      color: rgba(255, 33, 140, 1);
+      margin: 0 15px;
+    }
+  }
+}
+.logout{
+  color: rgba(255, 33, 140, 0.58);
+  font-family: Sansation-Light;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 33, 140, 0.58);
+  border-radius: 20px;
+  width: 300px;
+}

@@ -1,0 +1,16 @@
+<div class="auth_container">
+  <img src="../../../assets/images/login_page.svg">
+  <div class="for_right">
+  <div class="container_for_links">
+    <a routerLink="/registration"   class="registration">REGISTRATION</a>
+    <a class="auth">AUTH</a>
+  </div>
+  <div class="for_forms">
+    <form class="registration_form" [formGroup]="login_form" (ngSubmit)="submit()">
+      <input class="input" type="email" placeholder="Email" name="email" formControlName="email">
+      <input class="input" type="password" placeholder="Password" name="password" formControlName="password">
+      <button type="submit" class="for_button">Log in</button>
+    </form>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="nav-bar">
+  <div class="button_for_name">
+    <a routerLink="registration" class="text_for_name">OLGA</a>
+  </div>
+</div>
+<div class="info">
+  <p class="zodiac">{{sign   | titlecase}}</p>
+  <p class="description">{{prediction_.description}}</p>
+  <p class="day">Today</p>
+  <div class="item">
+    <div class="border">
+    <p class="item_info">Compatibility</p>
+    <p (click)="details1=!details1" class="btn">{{details1 ? '-' : '+'}}</p>
+    </div>
+    <div *ngIf="details1">
+      <p class="result">{{prediction_.compatibility  | titlecase}}</p>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="border">
+      <p class="item_info">Mood</p>
+      <p (click)="details2=!details2" class="btn">{{details2 ? '-' : '+'}}</p>
+    </div>
+    <div *ngIf="details2">
+      <p class="result">{{prediction_.mood  | titlecase}}</p>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="border">
+      <p class="item_info">Color</p>
+      <p (click)="details3=!details3" class="btn">{{details3 ? '-' : '+'}}</p>
+    </div>
+    <div *ngIf="details3">
+      <p class="result">{{prediction_.color  | titlecase}}</p>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="border">
+      <p class="item_info">Number</p>
+      <p (click)="details4=!details4" class="btn">{{details4 ? '-' : '+'}}</p>
+    </div>
+    <div *ngIf="details4">
+      <p class="result">{{prediction_.luckyNumber  | titlecase}}</p>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="border">
+      <p class="item_info">Lucky time</p>
+      <p (click)="details5=!details5" class="btn">{{details5 ? '-' : '+'}}</p>
+    </div>
+    <div *ngIf="details5">
+      <p class="result">{{prediction_.luckyTime  | titlecase}}</p>
+    </div>
+  </div>
+</div>
+<p class="logout" (click)="logout()">Log Out</p>

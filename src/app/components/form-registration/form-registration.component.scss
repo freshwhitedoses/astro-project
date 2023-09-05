@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Sansation-Light;
+  src: url("/assets/fonts/Sansation-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: Playfair;
+  src: url("/assets/fonts/PlayfairDisplaySC-Regular.ttf") format('truetype');
+}
+.auth_container{
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .auth_img{
+    width: 601px;
+    height: 801px;
+  }
+  .for_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container_for_links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 50px;
+
+      .registration {
+        font-family: Sansation-Light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 45px;
+        color: rgba(255, 33, 140, 0.58);
+      }
+
+      .auth {
+        font-family: Sansation-Light;
+        color: black;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 45px;
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+
+    .for_forms {
+
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+
+      .registration_form {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+
+        .input {
+          margin-bottom: 50px;
+          font-family: Sansation-Light;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 45px;
+          background: transparent;
+          border: none;
+          border-bottom: rgba(255, 33, 140, 0.58) solid 3px;
+          outline: none;
+          color: black;
+        }
+
+        .input::placeholder {
+          color: black;
+        }
+
+        .for_access {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .checkbox {
+            width: 40px;
+            height: 40px;
+            color: black;
+            border-color: tan;
+          }
+
+          .checkbox:checked {
+            accent-color: rgba(255, 33, 140, 0.58);
+          }
+        }
+
+        .label {
+          margin-bottom: 30px;
+          font-family: Sansation-Light;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 45px;
+        }
+
+        .for_button {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          width: 569px;
+          height: 80px;
+          background: rgba(255, 33, 140, 0.5);
+          border-radius: 10px;
+          font-family: Sansation-Light;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 55px;
+          line-height: 62px;
+          margin: 0 auto;
+          text-align: center;
+          border: 1px solid rgba(255, 33, 140, 0.5);
+        }
+      }
+    }
+  }
+}
